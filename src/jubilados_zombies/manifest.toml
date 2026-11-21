@@ -1,0 +1,32 @@
+id = "jubilados-zombies"
+name = "Jubilados Zombies"
+version = "1.0.0"
+requires_api = "0.4"
+description = "Doom de jubilados en el club: sacudí el celular para disparar, girá para recargar y cambiá de arma."
+locales = ["es"]
+default_locale = "es"
+players = [1, 1]
+modes = ["supervivencia", "oleadas"]
+
+[controller]
+layout = "motion"
+skin = "toxinator"
+orientation = "landscape"
+hint = "Sacudí: disparar | giro: recargar/arma"
+camera = false
+gestures = ["shake", "twist"]
+
+[controller.labels]
+cross = "Disparar"
+circle = "Volver"
+square = "Invertir giro"
+options = "Pausa"
+l1 = "Recargar"
+r1 = "Cambiar"
+
+[controller.gesture_labels]
+shake = "Disparar"
+twist = "Girar"
+
+[art]
+motif = "flag"
